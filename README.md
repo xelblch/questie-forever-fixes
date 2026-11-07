@@ -26,3 +26,6 @@ The log is saved to `WTF\Account\<account>\SavedVariables\QuestieForeverFixes.lu
 Generated fixes only fill **missing** prerequisites, never override QuestieDB. A step `A -> B` is applied only when A's turn-in NPC starts B and A isn't an optional breadcrumb. Uncertain chains are left out.
 
 When QuestieDB ships a fix upstream, `/qff check` shows it coming from QuestieDB and the local entry can be deleted.
+
+## License
+MIT, see [LICENSE](LICENSE). Not affiliated with the Questie team; Questie and QuestieDB are separate projects with their own licenses.
