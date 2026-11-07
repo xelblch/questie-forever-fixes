@@ -1,0 +1,15 @@
+# Only the addon files belong here; generator tools and their data live outside the repo
+tools/
+*.py
+*.jsonl
+*.csv
+*.tsv
+__pycache__/
+
+# Editor / OS noise
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

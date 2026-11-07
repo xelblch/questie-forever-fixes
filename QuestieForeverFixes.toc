@@ -1,0 +1,12 @@
+## Interface: 16001
+## Title: Questie - Forever Fixes
+## Notes: Local quest-chain corrections for Questie on WoW Forever (missing prerequisites).
+## Author: xelblch
+## Version: 0.2.0
+## IconTexture: Interface\AddOns\QuestieForeverFixes\Icon.png
+## Dependencies: QuestieDB
+## SavedVariables: QuestieForeverFixesLog
+
+Generated.lua
+Fixes.lua
+Core.lua
