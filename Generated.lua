@@ -4,6 +4,12 @@
 local _, QFF = ...
 
 QFF.generated = {
+	[99] = { nextQuestInChain = 98298 }, -- Arugal's Folly
+	[275] = { nextQuestInChain = 98283 }, -- Blisters on The Land
+	[286] = { nextQuestInChain = 98189 }, -- Return the Statuette
+	[299] = { nextQuestInChain = 98216 }, -- Uncovering the Past
+	[4921] = { nextQuestInChain = 95774 }, -- Lost in Battle
+	[79358] = { nextQuestInChain = 96135, preQuestSingle = {96264} }, -- Storm, Earth, and Fire
 	[91208] = { nextQuestInChain = 91209 }, -- Coming to Terms
 	[91209] = { preQuestSingle = {91208} }, -- Continue Your Training
 	[91858] = { nextQuestInChain = 91859 }, -- Diplomatic Incident
@@ -13,8 +19,26 @@ QFF.generated = {
 	[91862] = { nextQuestInChain = 96204, preQuestSingle = {91861} }, -- Lumina Windsinger
 	[91920] = { nextQuestInChain = 91921, preQuestSingle = {430} }, -- Wild Eyes
 	[91921] = { preQuestSingle = {91920} }, -- Return to Quinn (Again)
+	[92432] = { nextQuestInChain = 92458 }, -- An Alarming Request
+	[92434] = { nextQuestInChain = 96984 }, -- Blood in the Streets
+	[92458] = { nextQuestInChain = 92459, preQuestSingle = {92432} }, -- Heart of Disruption
+	[92459] = { preQuestSingle = {92458} }, -- Friend of the Kirin Tor
+	[92464] = { nextQuestInChain = 92465 }, -- Elemental Unrest
+	[92465] = { preQuestSingle = {92464} }, -- Agitators
+	[92469] = { nextQuestInChain = 92471 }, -- Return to Rorian
+	[92471] = { preQuestSingle = {92469} }, -- Aetheen of the Gales
 	[92742] = { nextQuestInChain = 92744 }, -- Testing the Wells
+	[92743] = { nextQuestInChain = 92841, preQuestSingle = {1369} }, -- A Conqueror's Crown
 	[92744] = { preQuestSingle = {92742} }, -- Murloc Gills
+	[92841] = { nextQuestInChain = 92844, preQuestSingle = {92743} }, -- Valley of Bones
+	[92844] = { nextQuestInChain = 92846, preQuestSingle = {92841} }, -- Mountain of Bones
+	[92846] = { preQuestSingle = {92844} }, -- Outcast Necromancers
+	[93034] = { nextQuestInChain = 93035, preQuestSingle = {1373} }, -- Valley of Bones
+	[93035] = { nextQuestInChain = 93037, preQuestSingle = {93034} }, -- Ravaging Ravagers
+	[93037] = { nextQuestInChain = 93041, preQuestSingle = {93035} }, -- Outing Outcasts
+	[93041] = { preQuestSingle = {93037} }, -- Facing the Truth
+	[93122] = { nextQuestInChain = 93128 }, -- Checking Things Out
+	[93128] = { preQuestSingle = {93122} }, -- Khan Jehn
 	[94373] = { preQuestSingle = {96243} }, -- Call of Earth
 	[94449] = { nextQuestInChain = 94465 }, -- Call of Fire
 	[94465] = { preQuestSingle = {94449} }, -- Call of Fire
@@ -26,13 +50,52 @@ QFF.generated = {
 	[94502] = { nextQuestInChain = 94503, preQuestSingle = {94501} }, -- Call of Water
 	[94503] = { nextQuestInChain = 94505, preQuestSingle = {94502} }, -- Call of Water
 	[94505] = { preQuestSingle = {94503} }, -- Call of Water
+	[94789] = { nextQuestInChain = 96264 }, -- Call of Air
+	[94946] = { nextQuestInChain = 94947 }, -- The Magical City of Dalaran
+	[94947] = { preQuestSingle = {94946} }, -- Welcome to Azeroth
 	[95034] = { nextQuestInChain = 95036, preQuestSingle = {96204} }, -- The Debt
 	[95036] = { nextQuestInChain = 95111, preQuestSingle = {95034} }, -- A Moon-Kissed Blade
 	[95111] = { nextQuestInChain = 95125, preQuestSingle = {95036} }, -- An Underrated Talent
 	[95125] = { nextQuestInChain = 95126, preQuestSingle = {95111} }, -- Ott's Masterwork
 	[95126] = { preQuestSingle = {95125} }, -- The Moonsilver Blade
+	[95349] = { nextQuestInChain = 95350 }, -- The Earthen Ring
+	[95350] = { preQuestSingle = {95349} }, -- Welcome to Azeroth
+	[95494] = { nextQuestInChain = 95507 }, -- Bruised Pride and Lion Hides
+	[95495] = { nextQuestInChain = 95621, preQuestSingle = {95507} }, -- The Hermit Tanner
+	[95507] = { nextQuestInChain = 95495, preQuestSingle = {95494} }, -- Vrang's Game
+	[95621] = { preQuestSingle = {95495} }, -- Trouble in the Valley
+	[95663] = { nextQuestInChain = 95682 }, -- Dragonmaw Rumors
+	[95664] = { nextQuestInChain = 98823 }, -- Elder Knowledge
+	[95682] = { preQuestSingle = {95663} }, -- Open the Maw
+	[95774] = { preQuestSingle = {4921} }, -- Her Name Is Olgra
+	[95810] = { nextQuestInChain = 98824 }, -- Lost Relic Carry
+	[95883] = { nextQuestInChain = 95885, preQuestSingle = {95884} }, -- The Tortured Soul
+	[95884] = { nextQuestInChain = 95883 }, -- The Offering Stone
+	[95885] = { preQuestSingle = {95883} }, -- The Offering of Blood
+	[96016] = { preQuestSingle = {96135} }, -- The Tempest's Weapons
+	[96135] = { nextQuestInChain = 96016, preQuestSingle = {79358} }, -- Heed My Call
 	[96204] = { nextQuestInChain = 95034, preQuestSingle = {91862} }, -- The Windshaper's Wrath
 	[96243] = { nextQuestInChain = 94373 }, -- Call of Earth
+	[96264] = { nextQuestInChain = 79358, preQuestSingle = {94789} }, -- Elemental Aid
+	[96984] = { nextQuestInChain = 97287, preQuestSingle = {92434} }, -- Heart of Disruption
+	[97287] = { preQuestSingle = {96984} }, -- Shrewd Negotiations
+	[98072] = { nextQuestInChain = 98240 }, -- Crocs of the Sky
+	[98094] = { nextQuestInChain = 98095 }, -- Scout Support
+	[98095] = { preQuestSingle = {98094} }, -- Valuable Vantages
+	[98189] = { nextQuestInChain = 98190, preQuestSingle = {286} }, -- Return the Statuette
+	[98190] = { nextQuestInChain = 98191, preQuestSingle = {98189} }, -- A Friend of the Family
+	[98191] = { preQuestSingle = {98190} }, -- A Friend of the Family
+	[98208] = { nextQuestInChain = 98209 }, -- Bloom of the Heavens
+	[98209] = { preQuestSingle = {98208} }, -- Bloom of the Heavens
+	[98216] = { nextQuestInChain = 98310, preQuestSingle = {299} }, -- Understanding Our Present
+	[98240] = { nextQuestInChain = 98245, preQuestSingle = {98072} }, -- Crimson Crate Delivery
+	[98245] = { preQuestSingle = {98240} }, -- Razormaw Needling
+	[98251] = { nextQuestInChain = 98252 }, -- Never Coming Back
+	[98252] = { preQuestSingle = {98251} }, -- A Void Path
+	[98283] = { preQuestSingle = {275} }, -- Carnage
+	[98298] = { preQuestSingle = {99} }, -- Arugal's Folly
+	[98310] = { nextQuestInChain = 98313, preQuestSingle = {98216} }, -- Gleaning Our Future
+	[98313] = { preQuestSingle = {98310} }, -- For Further Study
 	[98340] = { nextQuestInChain = 98341 }, -- The Great Cat Spirit
 	[98341] = { preQuestSingle = {98340} }, -- The Great Windborne Cat Spirit
 	[98342] = { nextQuestInChain = 98739, preQuestSingle = {98405} }, -- The Great Cat Spirit
@@ -43,7 +106,11 @@ QFF.generated = {
 	[98397] = { preQuestSingle = {98731} }, -- To Darnassus
 	[98404] = { nextQuestInChain = 98738 }, -- The Great Windborne Cat Spirit
 	[98405] = { nextQuestInChain = 98342 }, -- The Great Cat Spirit
+	[98417] = { nextQuestInChain = 98418 }, -- Vengeful Trail
+	[98418] = { preQuestSingle = {98417} }, -- Shared Fury
 	[98731] = { nextQuestInChain = 98397, preQuestSingle = {98396} }, -- Blessings of the Great Cat Spirit
 	[98738] = { preQuestSingle = {98404} }, -- Blessings of the Great Windborne Cat Spirit
 	[98739] = { nextQuestInChain = 98362, preQuestSingle = {98342} }, -- Blessings of the Great Cat Spirit
+	[98823] = { preQuestSingle = {95664} }, -- Earthen Echo
+	[98824] = { preQuestSingle = {95810} }, -- Prehistoric Prism
 }
